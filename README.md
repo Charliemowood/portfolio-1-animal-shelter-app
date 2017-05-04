@@ -10,22 +10,22 @@ Over the next week you have the chance to consolidate and expand on everything y
 - Web Programming ( REST/MVC )
 - Databases with CRUD actions
 
-## MoneyCashboard
+## Animal Shelter
 
-You want to start tracking your spending in an attempt to be more frugal with money. You have decided to make a budgeting app to help you see where all of your money is being spent.
+The Scottish Animal Shelter accepts orphaned or stray animals and takes care of them until they can be adopted by a new owner. The shelter has a list of potential new owners for the animals. Animals may take a while to be trained up and made healthy before being available for adoption.
 
-You must be able to create new Transactions ( which should include a merchant name, e.g. Tesco, and a value ) which have an associated Tag (e.g. 'food', 'clothes'). Your app would then be able to track a total, and display this in a view.
+They are looking for a management system to keep track of their animals and owners.
 
 ### MVP:
 
-- Create new transactions
-- Display a list of all transactions
-- Display total amount spent
-- Display total amount spent by tag
+ - A list of all their animals and their admission date
+ - Mark an animal as being adoptable/not adoptable
+ - Assign an animal to a new owner
+ - List all the owners and their adopted animals
 
 ### Possible Extensions:
 
-- CRUD actions for the transactions
-- Show a warning when the total expenditure is over budget (set a hard coded budget first)
-- Add a date to the transactions and view total spending by month
-- Any other ideas you might come up with
+ - CRUD actions for animals/owners
+ - Have separate pages for animals ready for adoption and ones still in training/vet care
+ - Search for animals by breed/type
+ - Any other ideas you might come up with
