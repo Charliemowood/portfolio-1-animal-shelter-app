@@ -3,6 +3,7 @@ DROP TABLE if exists cats;
 
 CREATE TABLE cats (
   id SERIAL4 PRIMARY KEY,
+  arrival_date date,
   name VARCHAR(255),
   type VARCHAR(255),
   adopted VARCHAR(255)
