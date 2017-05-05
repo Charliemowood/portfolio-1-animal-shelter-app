@@ -3,6 +3,7 @@ require_relative('../models/cat.rb')
 require('pry-byebug')
 
 Owner.delete_all()
+Cat.delete_all
 
 owner1 = Owner.new({
   'name' => 'Garry Potter'

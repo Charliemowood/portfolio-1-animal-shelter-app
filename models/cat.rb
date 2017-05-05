@@ -13,6 +13,11 @@ class Cat
     @picture = params['picture']
   end
 
+  def Cat.delete_all()
+    sql = "DELETE FROM cats";
+    SqlRunner.run(sql)
+  end
+
   def save()
     sql = "INSERT INTO cats (
     arrival_date,
