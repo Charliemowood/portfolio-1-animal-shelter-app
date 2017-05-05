@@ -20,4 +20,10 @@ class Owner
     result = SqlRunner.run(sql).first
     @id = result['id'].to_i()
   end
+
+  def Owner.find(id)
+    sql = "SELECT * FROM owners WHERE id=#{id}"
+    results = SqlRunner.run(sql)
+    return Owner.new(results.first)
+  end
 end
