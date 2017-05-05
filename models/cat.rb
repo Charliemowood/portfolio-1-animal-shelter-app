@@ -35,4 +35,10 @@ class Cat
     result = SqlRunner.run(sql).first
     @id = result['id'].to_i()
   end
+
+  def Cat.all()
+    sql = "SELECT * FROM cats;"
+    results = SqlRunner.run(sql)
+    results.map {|hash| Cat.new(hash)}
+  end
 end
