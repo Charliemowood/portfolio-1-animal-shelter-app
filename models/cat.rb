@@ -41,4 +41,10 @@ class Cat
     results = SqlRunner.run(sql)
     results.map {|hash| Cat.new(hash)}
   end
+
+  def Cat.find(id)
+    sql = "SELECT * FROM cats WHERE id=#{id}"
+    result = SqlRunner.run(sql)
+    return Cat.new(result.first)
+  end
 end
