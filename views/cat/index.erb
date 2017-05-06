@@ -1,1 +1,8 @@
-<h1>This is the page that control information related to the cat shelter.</h1>
+<h1>This is the page that control information related to the cat shelter. </h1>
+
+<% @cats.each do |cat|  %>
+<hr/>
+<p>Name: <%= cat.name %></p>
+<img class="imageblock" src="<%= cat.picture %>" alt="picture of cats" height="200px" width="200px">
+<hr/>
+<% end %>

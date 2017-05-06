@@ -68,7 +68,7 @@ cat5 = Cat.new({
    'name' => 'Lady Sissi',
    'type' => 'white/black',
    'adopted' => 'adopted',
-   'picture' => '/images/lady_sisi.jpg'
+   'picture' => '/images/lady_sissi.jpg'
   })
 cat5.save()
 
