@@ -2,3 +2,19 @@ body {
   background-color: Dodgerblue;
   font-family: 'Ubuntu', sans-serif;
 }
+
+.red {
+  color: red;
+}
+
+.green {
+  color: green;
+}
+
+.rye_font {
+  font-family: 'Rye', cursive;
+}
+
+.baskerville_font {
+  font-family: 'Libre Baskerville', serif;
+}
