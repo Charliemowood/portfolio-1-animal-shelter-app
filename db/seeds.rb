@@ -3,28 +3,7 @@ require_relative('../models/cat.rb')
 require('pry-byebug')
 
 Owner.delete_all()
-Cat.delete_all
-
-owner1 = Owner.new({
-  'name' => 'Garry Potter'
-  })
-owner1.save()
-
-owner2 = Owner.new({
-  'name' => 'Steve Jobs'
-  })
-owner2.save()
-
-owner3 = Owner.new({
-  'name' => 'Bertie Lissie'
-  })
-owner3.save()
-
-owner4 = Owner.new({
-  'name' => 'Jana Masarkova'
-  })
-owner4.save()
-
+Cat.delete_all()
 
 
 cat1 = Cat.new({
@@ -80,6 +59,30 @@ cat6 = Cat.new({
    'picture' => '/images/poppy.jpg'
   })
 cat6.save()
+
+owner1 = Owner.new({
+  'name' => 'Garry Potter',
+  'cat' => cat1.id
+  })
+owner1.save()
+
+owner2 = Owner.new({
+  'name' => 'Steve Jobs',
+  'cat' => cat2.id
+  })
+owner2.save()
+
+owner3 = Owner.new({
+  'name' => 'Bertie Lissie',
+  'cat' => cat3.id
+  })
+owner3.save()
+
+owner4 = Owner.new({
+  'name' => 'Jana Masarkova',
+  'cat' => cat4.id
+  })
+owner4.save()
 
 
 binding.pry

@@ -1,4 +1,5 @@
 require_relative('../db/sqlrunner.rb')
+require_relative('./cat.rb')
 
 class Owner
 
