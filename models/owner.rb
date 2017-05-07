@@ -16,12 +16,11 @@ class Owner
     SqlRunner.run(sql)
   end
 
-  def cat()
-    sql = "SELECT * FROM cats INNER JOIN owners ON cats.id = owners.cat WHERE owners.id = #{@id};"
-    returned_cat = SqlRunner.run(sql).first
-    cat = Cat.new(returned_cat)
-    return cat
-  end
+def cat()
+  sql = "SELECT * FROM cats WHERE id = #{@cat}"
+  result = SqlRunner.run(sql)
+  return Cat.new(result.first)
+end
 
 
   def save()
