@@ -3,12 +3,11 @@ require_relative('./cat.rb')
 
 class Owner
 
-  attr_reader :id, :name, :cat_id
+  attr_reader :id, :name
 
   def initialize(params)
     @id = params['id'].to_i
     @name = params['name']
-    @cat_id = params['cat'].to_i
   end
 
   def Owner.delete_all()
@@ -16,21 +15,15 @@ class Owner
     SqlRunner.run(sql)
   end
 
-def cat()
-  sql = "SELECT * FROM cats WHERE id = #{@cat_id}"
-  result = SqlRunner.run(sql)
-  return Cat.new(result.first)
-end
-
 
   def save()
-    sql = "INSERT INTO owners (name, cat) VALUES ('#{@name}', #{@cat_id}) RETURNING id"
+    sql = "INSERT INTO owners (name) VALUES ('#{@name}') RETURNING id"
     result = SqlRunner.run(sql).first
     @id = result['id'].to_i()
   end
 
   def Owner.find(id)
-    sql = "SELECT * FROM owners WHERE id=#{id}"
+    sql = "SELECT * FROM owners WHERE id = #{id}"
     results = SqlRunner.run(sql)
     return Owner.new(results.first)
   end

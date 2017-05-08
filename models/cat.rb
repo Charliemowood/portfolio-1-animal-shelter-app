@@ -1,8 +1,9 @@
 require_relative('../db/sqlrunner.rb')
+require_relative('./owner.rb')
 
 class Cat
 
-  attr_reader :id, :arrival_date, :name, :type, :adopted, :picture
+  attr_reader :id, :arrival_date, :name, :type, :adopted, :picture, :owner_id
 
   def initialize(params)
     @id = params['id'].to_i if params['id']
@@ -11,11 +12,18 @@ class Cat
     @type = params['type']
     @adopted = params['adopted']
     @picture = params['picture']
+    @owner_id = params['owner'].to_i
   end
 
   def Cat.delete_all()
     sql = "DELETE FROM cats";
     SqlRunner.run(sql)
+  end
+
+  def owner()
+    sql = "SELECT * FROM owners WHERE id = #{@owner_id}"
+    result = SqlRunner.run(sql)
+    return Owner.new(result.first)
   end
 
   def save()
@@ -24,13 +32,15 @@ class Cat
     name,
     type,
     adopted,
-    picture)
+    picture,
+    owner)
     VALUES (
     '#{@arrival_date}',
     '#{@name}',
     '#{@type}',
     '#{@adopted}',
-    '#{@picture}')
+    '#{@picture}',
+    '#{@owner_id}')
     RETURNING id"
     result = SqlRunner.run(sql)
     hash = result.first
@@ -48,4 +58,6 @@ class Cat
     result = SqlRunner.run(sql)
     return Cat.new(result.first)
   end
+
+
 end

@@ -1,8 +1,6 @@
 <h2>This is my owner page which will house my owner controller</h2>
 
-<% @owners.each do |owner| %>
+<% @cats.each do |cat| %>
 <hr/>
-  <p>Owner: <%= owner.name %></p>
-  <p>Cat: <%= owner.cat().name %></p>
-
+  <p>Owner: <%= cat.owner.name %></p>
 <% end %>
