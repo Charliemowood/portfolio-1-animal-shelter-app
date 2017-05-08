@@ -5,7 +5,7 @@ class Cat
   attr_reader :id, :arrival_date, :name, :type, :adopted, :picture
 
   def initialize(params)
-    @id = params['id'].to_i
+    @id = params['id'].to_i if params['id']
     @arrival_date = params['arrival_date']
     @name = params['name']
     @type = params['type']
@@ -32,8 +32,9 @@ class Cat
     '#{@adopted}',
     '#{@picture}')
     RETURNING id"
-    result = SqlRunner.run(sql).first
-    @id = result['id'].to_i()
+    result = SqlRunner.run(sql)
+    hash = result.first
+    @id = hash['id'].to_i()
   end
 
   def Cat.all()
