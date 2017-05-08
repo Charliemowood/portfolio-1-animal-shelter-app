@@ -1,6 +1,10 @@
 <h2>This is my owner page which will house my owner controller</h2>
 
+
 <% @cats.each do |cat| %>
 <hr/>
-  <p>Owner: <%= cat.owner.name %></p>
+<% if cat.owner.name %></p>
+  <p>Owner:<%= cat.owner.name %></p>
+  <p>Cat: <%= cat.name %></p>
+  <% end %>
 <% end %>

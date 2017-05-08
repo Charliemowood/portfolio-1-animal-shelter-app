@@ -5,5 +5,6 @@ require_relative('../models/cat.rb')
 
 get '/owners' do
   @cats = Cat.all()
+  @owners = Owner.all()
   erb (:"owner/index")
 end
