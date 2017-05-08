@@ -33,7 +33,7 @@ cat1 = Cat.new({
    'type' => 'tabby',
    'adopted' => 'adopted',
    'picture' => '/images/camomile.jpg',
-   'owner' => owner4.id
+   'owner' => owner2.id
   })
 cat1.save()
 
@@ -53,7 +53,7 @@ cat3 = Cat.new({
    'type' => 'white',
    'adopted' => 'for adoption',
    'picture' => '/images/fig.jpg',
-   'owner' => owner4.id
+   'owner' => owner1.id
   })
 cat3.save()
 
@@ -73,7 +73,7 @@ cat5 = Cat.new({
    'type' => 'white/black',
    'adopted' => 'adopted',
    'picture' => '/images/lady_sissi.jpg',
-   'owner' => owner4.id
+   'owner' => owner1.id
   })
 cat5.save()
 
@@ -83,7 +83,7 @@ cat6 = Cat.new({
    'type' => 'black',
    'adopted' => 'for adoption',
    'picture' => '/images/poppy.jpg',
-   'owner' => owner4.id
+   'owner' => owner2.id
   })
 cat6.save()
 

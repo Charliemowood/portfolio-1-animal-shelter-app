@@ -10,16 +10,23 @@ class Owner
     @name = params['name']
   end
 
+  def cats()
+    sql = "SELECT * FROM cats WHERE owner = #{@id}"
+    results = SqlRunner.run(sql)
+    results.map {|hash| Cat.new(hash)}
+    #array of cat objects
+  end
+
   def Owner.delete_all()
     sql = "DELETE FROM owners";
     SqlRunner.run(sql)
   end
 
-
   def save()
     sql = "INSERT INTO owners (name) VALUES ('#{@name}') RETURNING id"
-    result = SqlRunner.run(sql).first
-    @id = result['id'].to_i()
+    result = SqlRunner.run(sql)
+    hash = result.first
+    @id = hash['id'].to_i()
   end
 
   def Owner.find(id)
@@ -33,4 +40,5 @@ class Owner
     results = SqlRunner.run(sql)
     results.map {|hash| Owner.new(hash)}
   end
+
 end

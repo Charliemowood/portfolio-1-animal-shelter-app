@@ -1,10 +1,11 @@
-<h2>This is my owner page which will house my owner controller</h2>
+<h2>Here is the list of owners and their adopted cats</h2>
 
-
-<% @cats.each do |cat| %>
+<% @owners.each do |owner| %>
 <hr/>
-<% if cat.owner.name %></p>
-  <p>Owner:<%= cat.owner.name %></p>
-  <p>Cat: <%= cat.name %></p>
-  <% end %>
+   <p>Owner: <%= owner.name %></p>
+   <ul>
+     <% for cat in owner.cats %>
+     <li><%= cat.name %></li>
+     <% end %>
+   </ul>
 <% end %>
