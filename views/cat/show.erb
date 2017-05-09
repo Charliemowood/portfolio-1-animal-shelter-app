@@ -7,3 +7,6 @@
     <p class="green baskerville_font">Status: For adoption</p>
   <% end %>
   <p><a href="/cats/<%= @cat.id %>/edit">Edit Cat</a></p>
+  <form method="post" action="/cats/<%= @cat.id %>/delete">
+    <input type="submit" value="Delete cat">
+  </form>

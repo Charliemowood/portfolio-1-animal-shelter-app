@@ -30,7 +30,20 @@ end
 
 # EDIT
 get '/cats/:id/edit' do
-  @cat = Cat.find (params[:id])
+  @cat = Cat.find(params[:id])
   @owners = Owner.all()
   erb(:"cat/edit")
+end
+
+# CREATE
+post '/cats/:id' do
+  Cat.new(params).update
+  redirect to '/cats'
+end
+
+# DESTROY
+post '/cats/:id/delete' do
+  @cat = Cat.find(params[:id])
+  @cat.delete()
+  redirect to '/cats'
 end

@@ -66,5 +66,10 @@ class Cat
     return Cat.new(result.first)
   end
 
+  def delete()
+    sql = "DELETE FROM cats WHERE id = #{ @id }"
+    SqlRunner.run( sql )
+  end
+
 
 end

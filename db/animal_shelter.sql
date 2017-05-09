@@ -1,8 +1,6 @@
 DROP TABLE if exists owners;
 DROP TABLE if exists cats;
 
-
-
 CREATE TABLE owners (
   id SERIAL4 PRIMARY KEY,
   name VARCHAR(255)
