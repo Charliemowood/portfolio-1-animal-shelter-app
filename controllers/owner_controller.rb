@@ -21,3 +21,10 @@ post '/owners' do
   @owner.save()
   erb(:"owner/create")
 end
+
+# SHOW
+
+get '/owners/:id' do
+  @owner = Owner.find(params[:id])
+  erb(:"owner/show")
+end
