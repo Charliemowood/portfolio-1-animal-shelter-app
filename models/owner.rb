@@ -10,6 +10,18 @@ class Owner
     @name = params['name']
   end
 
+  def update()
+    sql = "UPDATE owners SET (name) = ('#{@name}')
+    WHERE id = #{@id}"
+    SqlRunner.run(sql)
+  end
+
+  def delete()
+    sql = "DELETE FROM owners WHERE id = #{@id}"
+    SqlRunner.run(sql)
+
+  end
+
   def cats()
     sql = "SELECT * FROM cats WHERE owner = #{@id}"
     results = SqlRunner.run(sql)

@@ -1,0 +1,11 @@
+<form action="/owners/<%= @owner.id %>" method="post">
+  <label for="owner-field">Owner Name:</label>
+  <input
+  type="text"
+  name="name"
+  id="owner-field"
+  value="<%= @owner.name %>">
+
+
+  <input type="submit" value="Edit owner">
+</form>
