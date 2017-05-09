@@ -15,8 +15,15 @@ get '/owners/new' do
   erb (:"owner/new")
 end
 
-post "/owners" do
-  @owner = Cat.new(params)
-  @owner.save()
-  erb(:create)
-end
+# post "/owners" do
+#   @cat = Cat.new(params)
+#   @owner.save()
+#   erb(:create)
+# end
+#
+# # /photos/:id	GET	show
+#
+# get "/owners/:id/" do
+#   @cat = Cat.find
+# end
+# # /photos/:id	PATCH/PUT	update

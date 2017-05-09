@@ -6,3 +6,8 @@ get '/cats' do
   @cats = Cat.all()
   erb(:"cat/index")
 end
+
+# get '/cat/:id/change/owner' do
+#   cat = Cat.find(params[:id])
+#   cat.owner_id =
+# end

@@ -15,6 +15,13 @@ class Cat
     @owner_id = params['owner'].to_i
   end
 
+  def update()
+    sql = "UPDATE cats SET (arrival_date, name, type, adopted, picture, owner) =
+          ('#{@arrival_date}', '#{@name}', '#{@type}', '#{@adopted}', '#{@picture}', #{@owner_id})
+          WHERE id = #{@id};"
+          SqlRunner.run(sql)
+  end
+
   def Cat.delete_all()
     sql = "DELETE FROM cats";
     SqlRunner.run(sql)
