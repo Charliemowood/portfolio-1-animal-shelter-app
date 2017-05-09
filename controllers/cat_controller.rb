@@ -27,3 +27,10 @@ get '/cats/:id' do
   @cat = Cat.find(params[:id])
   erb(:"cat/show")
 end
+
+# EDIT
+get '/cats/:id/edit' do
+  @cat = Cat.find (params[:id])
+  @owners = Owner.all()
+  erb(:"cat/edit")
+end
