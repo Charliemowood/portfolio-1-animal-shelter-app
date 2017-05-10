@@ -7,7 +7,8 @@
   type="date"
   name="arrival_date"
   id="arrival-date-field"
-  value="<%= @cat.arrival_date %>">
+  value="<%= @cat.arrival_date %>"
+  required>
   <br>
 
   <label for="name-field">Name:</label>
@@ -15,7 +16,8 @@
   type="text"
   name="name"
   id="name-field"
-  value="<%= @cat.name %>">
+  value="<%= @cat.name %>"
+  required>
   <br>
 
   <label for="type-field">Type:</label>
@@ -23,14 +25,16 @@
   type="text"
   name="type"
   id="type-field"
-  value="<%= @cat.type %>">
+  value="<%= @cat.type %>"
+  required>
   <br>
 
   <label for="adopted-selection">Adopted:</label>
     <select
     name="adopted"
     id="adopted-selection"
-    value="<%= @cat.adopted %>">
+    value="<%= @cat.adopted %>"
+    required>
       <option value="For Adoption">For Adoption</option>
       <option value="Adopted">Adopted</option>
     </select>
