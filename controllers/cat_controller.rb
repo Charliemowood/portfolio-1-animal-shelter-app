@@ -32,6 +32,7 @@ end
 get '/cats/:id/edit' do
   @cat = Cat.find(params[:id])
   @owners = Owner.all()
+  @cats = Cat.all()
   erb(:"cat/edit")
 end
 
