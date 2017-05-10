@@ -46,5 +46,5 @@ end
 post '/cats/:id/delete' do
   @cat = Cat.find(params[:id])
   @cat.delete()
-  redirect to '/cats'
+  erb(:"cat/destroy")
 end
