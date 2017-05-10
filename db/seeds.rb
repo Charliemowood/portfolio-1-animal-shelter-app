@@ -77,15 +77,6 @@ cat5 = Cat.new({
   })
 cat5.save()
 
-cat6 = Cat.new({
-  'arrival_date' => '2017-04-12',
-   'name' => 'Poppy',
-   'type' => 'black',
-   'adopted' => 'for adoption',
-   'picture' => '/images/poppy.jpg',
-   'owner' => owner2.id
-  })
-cat6.save()
 
 binding.pry
 nil
