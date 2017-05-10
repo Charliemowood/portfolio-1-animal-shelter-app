@@ -1,6 +1,6 @@
 
 <h3 class "firab">This is the page that control information related to the cat shelter. </h3>
-<a href="/cats/new">Create new cat</a>
+<a class="links" href="/cats/new">Create new cat</a>
 <% @cats.each do |cat|  %>
 <hr/>
 <p>Name: <%= cat.name %></p>
@@ -11,5 +11,5 @@
   <% elsif cat.adopted == 'for adoption' %>
     <p class="green baskerville_font">Status: For adoption</p>
   <% end %>
-<p><a href="/cats/<%= cat.id %>">Show more details</a></p>
+<p><a class="links" href="/cats/<%= cat.id %>">Show more details</a></p>
 <% end %>

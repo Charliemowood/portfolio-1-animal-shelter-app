@@ -1,6 +1,6 @@
 <p>The owner you have select is <%= @owner.name %></p>
 <p>What would you like to do?</p>
-<p><a href="/owners/<%= @owner.id %>/edit">Edit Owner</a></p>
+<p><a class="links" href="/owners/<%= @owner.id %>/edit">Edit Owner</a></p>
 <% if @owner.cats.count == 0 %>
 <form method="post" action="/owners/<%= @owner.id %>/delete">
   <input type="submit" value="Delete Owner">

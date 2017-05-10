@@ -1,5 +1,5 @@
 <h3>Here is the list of owners and their adopted cats</h3>
-<a href="/owners/new">Create New Owner</a>
+<a class="links" href="/owners/new">Create New Owner</a>
 <% @owners.each do |owner| %>
 <hr/>
    <p>Owner: <%= owner.name %></p>
@@ -8,5 +8,5 @@
      <li><%= cat.name %></li>
      <% end %>
    </ul>
-<p><a href="/owners/<%= owner.id %>">Show more options for this owner</a></p>
+<p><a class="links" href="/owners/<%= owner.id %>">Show Owner</a></p>
 <% end %>

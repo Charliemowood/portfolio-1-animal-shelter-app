@@ -62,3 +62,26 @@ li.topnav a:hover {
 .baskerville_font {
   font-family: 'Libre Baskerville', serif;
 }
+
+a.links:link, a:visited {
+    background-color: white;
+    color: black;
+    border: 2px solid green;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+a.links:hover, a:active {
+    background-color: green;
+    color: white;
+}
+
+head {
+  position: relative;
+}
+
+.bg-img {
+  width: 100%;
+}
