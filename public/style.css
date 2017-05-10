@@ -5,6 +5,16 @@ body {
     font-family: 'Ubuntu', sans-serif;
 }
 
+
+.flexcontainer {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .container {
     width: 20em;
     clear: both;
@@ -18,12 +28,6 @@ body {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
-
-}
-
-.left {
-  display: flex;
-  align-items: left;
 }
 
 ul.topnav {
@@ -56,7 +60,6 @@ li.topnav a:hover:not(.active) {
     background-color: green;
     color: white;
 }
-
 
 .red {
   color: red;

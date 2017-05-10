@@ -36,7 +36,7 @@ cat1 = Cat.new({
   'arrival_date' => '2017-05-20',
    'name' => 'Camomile',
    'type' => 'tabby',
-   'Adopted' => 'Adopted',
+   'adopted' => 'Adopted',
    'picture' => '/images/camomile.jpg',
    'owner' => owner2.id
   })
