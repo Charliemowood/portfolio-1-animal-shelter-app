@@ -1,5 +1,7 @@
 <h3 class "firab">This is the page that controls information related to the cat shelter. You can handle your various administration tasks here.</h3>
-<a class="links" href="/cats/new">Create Cat</a>
+<div class="left">
+  <a class="links" href="/cats/new">Create Cat</a>
+</div>
 <% @cats.each do |cat|  %>
 <hr/>
 <p>Name: <%= cat.name %></p>

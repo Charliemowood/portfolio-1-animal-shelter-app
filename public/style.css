@@ -22,6 +22,12 @@ body {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
+
+}
+
+.left {
+  display: flex;
+  align-items: left;
 }
 
 ul.topnav {
