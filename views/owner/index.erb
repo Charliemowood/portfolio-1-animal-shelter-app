@@ -6,7 +6,7 @@
 <% @owners.each do |owner| %>
 <hr/>
    <p>Owner: <%= owner.name %></p>
-   <% unless owner.name == 'For Adoption' %>
+   <% unless owner.name == 'Cat Shelter' %>
    <p><a class="links" href="/owners/<%= owner.id %>">Show Owner</a></p>
    <% end %>
    <ul>

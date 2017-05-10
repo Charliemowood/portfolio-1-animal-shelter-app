@@ -27,7 +27,7 @@ owner4 = Owner.new({
 owner4.save()
 
 owner5 = Owner.new({
-  'name' => 'For Adoption'
+  'name' => 'Cat Shelter'
   })
 owner5.save()
 

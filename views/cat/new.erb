@@ -13,8 +13,8 @@
   <br>
   <label for="adopted-selection">Adopted:</label>
     <select name="adopted" id="adopted-selection">
-      <option value="Adopted">Adopted</option>
       <option value="For adoption">For Adoption</option>
+      <option value="Adopted">Adopted</option>
     </select>
   <br>
   <label for="picture-selection">Picture Selection:</label>
@@ -26,7 +26,7 @@
   <select name="owner" id ="owner-selection" required>
     <% @owners.each do |owner| %>
     <option value="<%= owner.id %>"
-      selected="For Adoption"><%= owner.name %></option>
+      selected="Cat Shelter"><%= owner.name %></option>
     <% end %>
   </select>
   <br>
