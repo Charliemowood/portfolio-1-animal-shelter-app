@@ -48,5 +48,5 @@ end
 post '/owners/:id/delete' do
   @owner = Owner.find(params[:id])
   @owner.delete()
-  redirect to '/owners'
+  erb(:"/owner/destroy")
 end
