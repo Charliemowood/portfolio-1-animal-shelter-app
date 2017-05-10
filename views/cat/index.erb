@@ -7,9 +7,9 @@
 <p>Name: <%= cat.name %></p>
 <p>Arrival date: <%= cat.arrival_date %></p>
 <img class="imageblock" src="<%= cat.picture %>" alt="picture of cats" height="200px" width="200px">
-  <% if cat.adopted == 'adopted' %>
+  <% if cat.adopted == 'Adopted' %>
     <p class="red rye_font">Status: Adopted</p>
-  <% elsif cat.adopted == 'for adoption' %>
+  <% elsif cat.adopted == 'For Adoption' %>
     <p class="green baskerville_font">Status: For Adoption</p>
   <% end %>
 <p><a class="links" href="/cats/<%= cat.id %>">Show More Details</a></p>

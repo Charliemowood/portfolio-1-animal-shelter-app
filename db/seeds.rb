@@ -36,7 +36,7 @@ cat1 = Cat.new({
   'arrival_date' => '2017-05-20',
    'name' => 'Camomile',
    'type' => 'tabby',
-   'adopted' => 'adopted',
+   'Adopted' => 'Adopted',
    'picture' => '/images/camomile.jpg',
    'owner' => owner2.id
   })
@@ -46,7 +46,7 @@ cat2 = Cat.new({
   'arrival_date' => '2017-05-10',
    'name' => 'Cookie',
    'type' => 'mottled',
-   'adopted' => 'for adoption',
+   'adopted' => 'For Adoption',
    'picture' => '/images/cookie.jpg',
    'owner' => owner5.id
   })
@@ -56,7 +56,7 @@ cat3 = Cat.new({
   'arrival_date' => '2017-05-20',
    'name' => 'Fig',
    'type' => 'white',
-   'adopted' => 'for adoption',
+   'adopted' => 'For Adoption',
    'picture' => '/images/fig.jpg',
    'owner' => owner5.id
   })
@@ -66,7 +66,7 @@ cat4 = Cat.new({
   'arrival_date' => '2017-04-20',
    'name' => 'Muffin',
    'type' => 'white/black',
-   'adopted' => 'for adoption',
+   'adopted' => 'For Adoption',
    'picture' => '/images/muffin.jpg',
    'owner' => owner5.id
   })
@@ -76,7 +76,7 @@ cat5 = Cat.new({
   'arrival_date' => '2017-05-01',
    'name' => 'Lady Sissi',
    'type' => 'white/black',
-   'adopted' => 'adopted',
+   'adopted' => 'Adopted',
    'picture' => '/images/lady_sissi.jpg',
    'owner' => owner1.id
   })
