@@ -4,9 +4,6 @@ body {
     margin-right:auto;
 }
 
-body {
-    padding-top: 1em;
-}
 
 body {
   font-family: 'Ubuntu', sans-serif;
@@ -42,10 +39,18 @@ li.topnav a {
     text-decoration: none;
 }
 
+li.topnav a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
 /* Change the link color to #111 (black) on hover */
 li.topnav a:hover {
     background-color: #111;
 }
+
+
+
 
 .red {
   color: red;
@@ -78,7 +83,7 @@ a.links:hover, a:active {
     color: white;
 }
 
-head {
+header {
   position: relative;
 }
 
