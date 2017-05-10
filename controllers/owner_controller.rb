@@ -40,7 +40,7 @@ end
 
 post '/owners/:id' do
   Owner.new(params).update()
-  redirect to '/owners'
+  erb(:"/owner/update")
 end
 
 # DELETE
