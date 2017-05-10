@@ -3,16 +3,16 @@
 
 <form method="post" action="/cats" >
   <label for="arrival-date-field">Arrival Date:</label>
-  <input type="date" name="arrival_date" id="arrival-date-field">
+  <input type="date" name="arrival_date" id="arrival-date-field" required>
   <br>
   <label for="name-field">Name:</label>
-  <input type="text" name="name" id="name-field">
+  <input type="text" name="name" id="name-field" required>
   <br>
   <label for="type-field">Type:</label>
-  <input type="text" name="type" id="type-field">
+  <input type="text" name="type" id="type-field" required>
   <br>
   <label for="adopted-selection">Adopted:</label>
-    <select name="adopted" id="adopted-selection">
+    <select name="adopted" id="adopted-selection" required>
       <option value="For Adoption">For Adoption</option>
       <option value="Adopted">Adopted</option>
     </select>
