@@ -1,6 +1,6 @@
-<h3>Here you edit a cat.</h3>
+<h3>Please use this form to edit the cat that you have selected.</h3>
 <form method="post" action="/cats/<%= @cat.id %>" >
-  <label for="arrival-date-field">Arrival date:</label>
+  <label for="arrival-date-field">Arrival Date:</label>
   <input
   type="date"
   name="arrival_date"
@@ -30,14 +30,14 @@
       <option value="For adoption">For adoption</option>
     </select>
 
-  <label for="picture-selection"></label>
+  <label for="picture-selection">Picture Selection:</label>
   <select name="picture"
   id="picture-selection"
   value="@cat.picture">
     <option value="/images/generic_cat.jpg">generic picture</option>
   </select>
 
-  <label for="owner-selection"></label>
+  <label for="owner-selection">Owner Selection:</label>
   <select name="owner"
    id ="owner-selection"
    value="<%= @cat.owner_id %>"
