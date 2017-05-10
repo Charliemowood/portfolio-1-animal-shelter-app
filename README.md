@@ -1,5 +1,3 @@
-# Programming & Web Fundamentals
-
 The aim of this project was to explore the following technlogies:
 
 - Ruby fundamentals
