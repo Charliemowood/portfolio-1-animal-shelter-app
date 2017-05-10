@@ -1,3 +1,4 @@
+<p><a class="links" href="/cats/<%= @cat.id %>/edit">Edit Cat</a></p>
 <p>Name: <%= @cat.name %></p>
 <p>Arrival date: <%= @cat.arrival_date %></p>
 <img class="imageblock" src="<%= @cat.picture %>" alt="picture of cats" height="200px" width="200px">
@@ -6,7 +7,7 @@
   <% elsif @cat.adopted == 'for adoption' %>
     <p class="green baskerville_font">Status: For adoption</p>
   <% end %>
-  <p><a class="links" href="/cats/<%= @cat.id %>/edit">Edit Cat</a></p>
+
   <form method="post" action="/cats/<%= @cat.id %>/delete">
-    <input type="submit" value="Delete cat">
+    <input class="red" type="submit" value="Delete cat">
   </form>

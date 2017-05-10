@@ -89,8 +89,18 @@ header {
   width: 100%;
 }
 
-input[type=submit] {
+input.green[type=submit] {
     background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    margin: 2px;
+    cursor: pointer;
+}
+
+input.red[type=submit] {
+    background-color: tomato;
     border: none;
     color: white;
     padding: 10px 20px;
