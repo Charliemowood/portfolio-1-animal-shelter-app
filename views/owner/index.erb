@@ -6,10 +6,13 @@
 <% @owners.each do |owner| %>
 <hr/>
    <p>Owner: <%= owner.name %></p>
+   <% unless owner.name == 'For Adoption' %>
+   <p><a class="links" href="/owners/<%= owner.id %>">Show Owner</a></p>
+   <% end %>
    <ul>
      <% for cat in owner.cats %>
      <li><%= cat.name %></li>
      <% end %>
    </ul>
-<p><a class="links" href="/owners/<%= owner.id %>">Show Owner</a></p>
+
 <% end %>
