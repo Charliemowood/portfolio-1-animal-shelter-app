@@ -8,6 +8,15 @@ body {
   font-family: 'Ubuntu', sans-serif;
 }
 
+.container {
+    width: 20em;
+    clear: both;
+}
+.container input {
+    width: 100%;
+    clear: both;
+}
+
 
 .red {
   color: red;

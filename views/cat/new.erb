@@ -1,32 +1,36 @@
-<form method="post" action="/cats" >
-  <label for="arrival-date-field">Arrival date:</label>
-  <input type="date" name="arrival_date" id="arrival-date-field">
+<div class="container">
 
+
+<form method="post" action="/cats" >
+  <label for="arrival-date-field">Arrival Date:</label>
+  <input type="date" name="arrival_date" id="arrival-date-field">
+  <br>
   <label for="name-field">Name:</label>
   <input type="text" name="name" id="name-field">
-
+  <br>
   <label for="type-field">Type:</label>
   <input type="text" name="type" id="type-field">
-
+  <br>
   <label for="adopted-selection">Adopted:</label>
     <select name="adopted" id="adopted-selection">
       <option value="Adopted">Adopted</option>
       <option value="For adoption">For adoption</option>
     </select>
-
-  <label for="picture-selection"></label>
+  <br>
+  <label for="picture-selection">Picture Selection:</label>
   <select name="picture" id="picture-selection">
     <option value="/images/generic_cat.jpg">generic picture</option>
   </select>
-
-  <label for="owner-selection"></label>
+  <br>
+  <label for="owner-selection">Owner Selection:</label>
   <select name="owner" id ="owner-selection" required>
     <option value="">Select owner</option>
     <% @owners.each do |owner| %>
     <option value="<%= owner.id %>"><%= owner.name %></option>
     <% end %>
   </select>
-
+  <br>
+  </div>
   <input type="submit" value="Create new cat">
 
 </form>
