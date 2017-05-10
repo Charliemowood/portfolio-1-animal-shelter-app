@@ -5,7 +5,7 @@ The aim of this project was to explore the following technlogies:
 - Web Programming ( REST/MVC )
 - Databases with CRUD actions
 
-## Cat Shelter
+## Task
 
 This project seek to provide services for the administration of a Cat Shelter.
 
