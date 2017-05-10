@@ -24,9 +24,9 @@
   <br>
   <label for="owner-selection">Owner Selection:</label>
   <select name="owner" id ="owner-selection" required>
-    <option value="">Select Owner</option>
     <% @owners.each do |owner| %>
-    <option value="<%= owner.id %>"><%= owner.name %></option>
+    <option value="<%= owner.id %>"
+      selected="For Adoption"><%= owner.name %></option>
     <% end %>
   </select>
   <br>
