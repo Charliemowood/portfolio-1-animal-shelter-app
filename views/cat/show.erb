@@ -5,9 +5,9 @@
   <% if @cat.adopted == 'adopted' %>
     <p class="red rye_font">Status: Adopted</p>
   <% elsif @cat.adopted == 'for adoption' %>
-    <p class="green baskerville_font">Status: For adoption</p>
+    <p class="green baskerville_font">Status: For Adoption</p>
   <% end %>
 
   <form method="post" action="/cats/<%= @cat.id %>/delete">
-    <input class="red" type="submit" value="Delete cat">
+    <input class="red" type="submit" value="Delete Cat">
   </form>

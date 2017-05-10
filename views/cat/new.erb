@@ -14,23 +14,23 @@
   <label for="adopted-selection">Adopted:</label>
     <select name="adopted" id="adopted-selection">
       <option value="Adopted">Adopted</option>
-      <option value="For adoption">For adoption</option>
+      <option value="For adoption">For Adoption</option>
     </select>
   <br>
   <label for="picture-selection">Picture Selection:</label>
   <select name="picture" id="picture-selection">
-    <option value="/images/generic_cat.jpg">generic picture</option>
+    <option value="/images/generic_cat.jpg">Generic Picture</option>
   </select>
   <br>
   <label for="owner-selection">Owner Selection:</label>
   <select name="owner" id ="owner-selection" required>
-    <option value="">Select owner</option>
+    <option value="">Select Owner</option>
     <% @owners.each do |owner| %>
     <option value="<%= owner.id %>"><%= owner.name %></option>
     <% end %>
   </select>
   <br>
   </div>
-  <input class="green" type="submit" value="Create new cat">
+  <input class="green" type="submit" value="Create New Cat">
 
 </form>
