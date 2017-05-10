@@ -39,7 +39,7 @@ end
 # CREATE
 post '/cats/:id' do
   Cat.new(params).update
-  redirect to '/cats'
+  erb(:"cat/update")
 end
 
 # DESTROY
