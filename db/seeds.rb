@@ -26,6 +26,11 @@ owner4 = Owner.new({
   })
 owner4.save()
 
+owner5 = Owner.new({
+  'name' => 'For Adoption'
+  })
+owner5.save()
+
 
 cat1 = Cat.new({
   'arrival_date' => '2017-05-20',
@@ -43,7 +48,7 @@ cat2 = Cat.new({
    'type' => 'mottled',
    'adopted' => 'for adoption',
    'picture' => '/images/cookie.jpg',
-   'owner' => owner4.id
+   'owner' => owner5.id
   })
 cat2.save()
 
@@ -53,7 +58,7 @@ cat3 = Cat.new({
    'type' => 'white',
    'adopted' => 'for adoption',
    'picture' => '/images/fig.jpg',
-   'owner' => owner1.id
+   'owner' => owner5.id
   })
 cat3.save()
 
@@ -63,7 +68,7 @@ cat4 = Cat.new({
    'type' => 'white/black',
    'adopted' => 'for adoption',
    'picture' => '/images/muffin.jpg',
-   'owner' => owner4.id
+   'owner' => owner5.id
   })
 cat4.save()
 
@@ -76,6 +81,7 @@ cat5 = Cat.new({
    'owner' => owner1.id
   })
 cat5.save()
+
 
 
 binding.pry
