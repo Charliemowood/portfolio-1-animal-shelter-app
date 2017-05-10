@@ -9,11 +9,14 @@
 <% @owners.each do |owner| %>
 <hr/>
    <p>Owner: <%= owner.name %></p>
-   <ul>
+   <% if owner.cats.count == 0 %>
+   <p>This owner presently has no cats.</p>
+   <% else %>
+     <p>List of cats</p>
      <% for cat in owner.cats %>
      <li><%= cat.name %></li>
      <% end %>
-   </ul>
+   <% end %>
    <% unless owner.name == 'Cat Shelter' %>
    <p><a class="links" href="/owners/<%= owner.id %>">Show Owner</a></p>
    <% end %>
