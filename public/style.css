@@ -2,11 +2,7 @@ body {
     width:80%;
     margin-left:auto;
     margin-right:auto;
-}
-
-
-body {
-  font-family: 'Ubuntu', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 .container {
@@ -52,13 +48,13 @@ li.topnav a {
 }
 
 li.topnav a.active {
-    background-color: #4CAF50;
+    background-color: black;
     color: white;
 }
 
-/* Change the link color to #111 (black) on hover */
-li.topnav a:hover {
-    background-color: #111;
+li.topnav a:hover:not(.active) {
+    background-color: green;
+    color: white;
 }
 
 
