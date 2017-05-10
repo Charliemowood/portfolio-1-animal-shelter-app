@@ -1,13 +1,17 @@
-<p><a class="links" href="/cats/<%= @cat.id %>/edit">Edit Cat</a></p>
-<p>Name: <%= @cat.name %></p>
-<p>Arrival date: <%= @cat.arrival_date %></p>
-<img class="imageblock" src="<%= @cat.picture %>" alt="picture of cats" height="200px" width="200px">
-  <% if @cat.adopted == 'adopted' %>
-    <p class="red rye_font">Status: Adopted</p>
-  <% elsif @cat.adopted == 'for adoption' %>
-    <p class="green baskerville_font">Status: For Adoption</p>
-  <% end %>
+<h3 class="green">Possible Actions:</h3>
 
-  <form method="post" action="/cats/<%= @cat.id %>/delete">
-    <input class="red" type="submit" value="Delete Cat">
-  </form>
+<div class="flexcontainer1">
+    <p><a class="links" href="/cats/<%= @cat.id %>/edit">Edit Cat</a></p>
+    <form method="post" action="/cats/<%= @cat.id %>/delete">
+    <input class="red" type="submit" value="Delete Cat" />
+    </form>
+</div>
+
+<h4>Selected Cat:</h4>
+  <p>Name: <%= @cat.name %></p>
+  <img class="imageblock" src="<%= @cat.picture %>" alt="picture of cats" height="200px" width="200px">
+    <% if @cat.adopted == 'adopted' %>
+      <p class="red rye_font">Status: Adopted</p>
+    <% elsif @cat.adopted == 'for adoption' %>
+      <p class="green baskerville_font">Status: For Adoption</p>
+    <% end %>
