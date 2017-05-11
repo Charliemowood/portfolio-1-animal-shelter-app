@@ -1,6 +1,5 @@
 require_relative('../models/owner.rb')
 require_relative('../models/cat.rb')
-require('pry-byebug')
 
 Cat.delete_all()
 Owner.delete_all()
@@ -81,8 +80,3 @@ cat5 = Cat.new({
    'owner' => owner1.id
   })
 cat5.save()
-
-
-
-binding.pry
-nil
