@@ -1,5 +1,6 @@
-DROP TABLE if exists owners;
 DROP TABLE if exists cats;
+DROP TABLE if exists owners;
+
 
 CREATE TABLE owners (
   id SERIAL4 PRIMARY KEY,
@@ -13,5 +14,5 @@ CREATE TABLE cats (
   type VARCHAR(255),
   adopted VARCHAR(255),
   picture VARCHAR(255),
-  owner INT4 REFERENCES owners(id)
+  owner INT4 REFERENCES owners(id) ON DELETE CASCADE
 );
