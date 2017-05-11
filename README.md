@@ -28,7 +28,7 @@ This project seek to provide services for the administration of a Cat Shelter.
 
 ```cd portfolio-1-animal-shelter-app```
 
-3. Check you have the right gems installed.
+3. Check you have the right gems installed. Run the following commands in your terminal.
 
 ```gem install sinatra```
 
@@ -36,4 +36,4 @@ This project seek to provide services for the administration of a Cat Shelter.
 
 4. Run build script ensuring you are in the top level of the project.
 
-```Run build-and-run.rb```
+```Ruby build-and-run.rb```
