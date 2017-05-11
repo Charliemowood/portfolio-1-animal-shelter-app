@@ -37,3 +37,8 @@ This project seek to provide services for the administration of a Cat Shelter.
 4. Run build script ensuring you are in the top level of the project.
 
 ```Ruby build-and-run.rb```
+
+5. Type into your browser.
+
+```http://localhost:4567/```
+
