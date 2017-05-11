@@ -21,11 +21,19 @@ This project seek to provide services for the administration of a Cat Shelter.
 ## Run on your system
 
 1. Open Terminal and repository.
-git clone git@github.com:Charliemowood/portfolio-1-animal-shelter-app.git
+
+```git clone git@github.com:Charliemowood/portfolio-1-animal-shelter-app.git```
+
 2. Change directory into project.
-cd portfolio-1-animal-shelter-app
+
+```cd portfolio-1-animal-shelter-app```
+
 3. Check you have the right gems installed.
-gem install sinatra
-gem install pg
+
+```gem install sinatra```
+
+```gem install pg```
+
 4. Run build script ensuring you are in the top level of the project.
-Run build-and-run.rb
+
+```Run build-and-run.rb```
