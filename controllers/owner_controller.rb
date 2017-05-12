@@ -1,5 +1,5 @@
 require('sinatra')
-require('sinatra/contrib/all') if development?
+# require('sinatra/contrib/all') if development?
 require_relative('../models/owner.rb')
 require_relative('../models/cat.rb')
 
