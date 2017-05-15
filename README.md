@@ -1,4 +1,4 @@
-The aim of this project was to explore the following technlogies:
+The aim of this project was to explore the following technologies:
 
 - Ruby fundamentals
 - OOP
